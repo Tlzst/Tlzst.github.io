@@ -1,0 +1,90 @@
+body {
+    background-color: rgba(232, 178, 180, 0.3);
+    user-select: none;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(255, 199, 201, 0.5);
+}
+
+#images {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    background: #222;
+    padding: 6px;
+}
+
+#copyright {
+    color: white;
+    text-align: center;
+}
+
+#formulaire {
+    width: 15%;
+    margin: 0 auto;
+}
+
+#img {
+    width: 25%;
+}
+
+/* Carrousel */
+
+#carrousel {
+    width: 995px;
+    height: 540px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+#container {
+    width: 995px;
+    height: 540px;
+}
+
+.image {
+    width: 995px;
+    height: 540px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+}
+
+.bouton {
+    position: absolute;
+    width: 70px;
+    cursor: pointer;
+    top: 50%;
+}
+
+#left {
+    left: 0;
+    opacity: 0.6;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#right {
+    right: 0;
+    opacity: 0.6;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#left:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+}
+
+#right:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+}
